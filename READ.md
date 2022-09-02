@@ -26,3 +26,23 @@ git init
 ``` bash
 git status
 ```
+
+* para agrgar los archivos a la memoria de la pc
+``` bash
+git add .
+```
+
+* crear el registro de los cambios realizados en el main o master
+``` bash
+git commit -m "comentario"
+```
+
+* para ver registros que quedan guardados
+``` bash
+git log
+```
+
+* para ver registros que quedan guardados
+``` bash
+git log
+```
