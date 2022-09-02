@@ -46,3 +46,13 @@ git log
 ``` bash
  git branch -M main
 ```
+
+* se utiliza para agregar la url a github
+``` bash
+ git remote add origin https://github.com/jparedes23/Codigo_pc.git
+```
+
+* se utilizar para dar autorizacion al github para subir tu proyecto
+``` bash
+  git push origin main
+```
