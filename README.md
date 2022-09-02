@@ -42,7 +42,7 @@ git commit -m "comentario"
 git log
 ```
 
-* para ver registros que quedan guardados
+* para cambiar de master a main
 ``` bash
-git log
+ git branch -M main
 ```
