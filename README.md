@@ -56,3 +56,7 @@ git log
 ``` bash
   git push origin main
 ```
+* se utiliza para clonar o descargar archivos desde GitHub....
+``` bash
+  git clone https://github.com/jparedes23/Codigo_pc.git
+```
