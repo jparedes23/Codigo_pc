@@ -15,35 +15,67 @@
       <p>
         <input
           id="input-nombre"
+          required
+          name="nombre"
           value=""
           type="text"
           placeholder="ingrese su nombre"
         />
       </p>
 
+      <p>
+        <input
+          id="dni-input"
+          style="width: 140px"
+          maxlength="8"
+          required
+          name="dni"
+          value=""
+          type="number"
+          placeholder="ingrese su dni"
+        />
+      </p>
+
       <!-- INPUT type: number -->
       <p>
-        <input type="number" placeholder="Ingrese su edad" />
+        <input type="number" 
+        name="number"
+        value="92"
+        readonly
+        placeholder="Ingrese su edad" 
+        required
+        value=""/>
       </p>
 
       <!-- INPUT type: email -->
       <p>
-        <input type="email" placeholder="Ingrese su correo" />
+        <input type="email" 
+        name="email"
+        placeholder="Ingrese su correo"
+        required
+        value=""/>
       </p>
 
       <!-- INPUT type: password -->
       <p>
-        <input type="password" placeholder="Ingrese su contraseña" />
+        <input type="password" 
+        name="pass"
+        placeholder="Ingrese su contraseña" 
+        required
+        value=""/>
       </p>
 
       <!-- INPUT type: date -->
       <p>
-        <input type="date" placeholder="Ingrese su fecha" />
+        <input type="date" 
+        name="date"
+        required
+        value="" />
       </p>
 
       <!-- Lista de opciones -->
       <p>
-        <select>
+        <select required>
           <option value="" disabled selected>Selecciona un curso</option>
           <option value="curso-react">Curso de React</option>
           <option value="curso-html">Curso de HTML</option>
