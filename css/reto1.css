@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: hsl(30, 38%, 92%);
+}
+
+.container{
+  display: flex;
+  justify-content: center; /* centra el contairner*/
+  align-items: center; /* alinea elementos de forma vertical*/
+  height: 100vh; /* ocupa toda la pantalla*/
+}
+.left-image{
+  background: url(../images/image-product-desktop.jpg);
+  background-size: contain;  /* adecua la imagen  */
+  background-repeat: no-repeat; /* ayuda para que la imagen no repita  */
+  height: 400px;
+  width: 300px;
+  background-color: #fff;
+  border-top-left-radius: 8px; /* bordea izquierda arriba  */
+  border-bottom-left-radius: 8px; /* bordea izquierda abajo*/
+}
+.content {
+  height: 400px;
+  width: 250px;
+  background-color: #fff;
+  border-top-right-radius: 8px; /* bordea derecha arriba  */
+  border-bottom-right-radius: 8px;  /* bordea derecha abajo  */
+  padding: 20px;
+}
+.sub-title {
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228, 12%, 48%);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 4px;
+}
+.title {
+  color: hsl(212, 21%, 14%);
+  font-family: "Fraunces", sans-serif;
+  margin-top: 15px;
+}
+
+.text-content {
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228, 12%, 48%);
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.content-price {
+  display: flex; /* se utiliza para hacer filas y se pueda manipular la posicion del precio al costado de otro*/
+  align-items: center; /* para centrar el precio pequeño*/
+
+}
+
+.offert-price {
+  color: hsl(158, 36%, 37%);
+  font-family: "Fraunces", sans-serif;
+  font-weight: 700;
+}
+
+.real-price {
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228, 12%, 48%);
+  margin-left: 10px;
+  font-size: 13px;
+  text-decoration: line-through;
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  border: none;
+  padding: 10px;
+  color: #fff;
+  background-color: hsl(158, 36%, 37%);
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /*  es un espacio entre elementos del carrito al texto*/
+}

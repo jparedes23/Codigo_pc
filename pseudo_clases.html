@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    input:focus {
+      outline: none;
+    }
+
+    input:valid:focus {
+      border: 1px solid green;
+    }
+
+    input :invalid:focus{
+      border: 1x solid red;
+    }
+
+
+  </style>
+</head>
+<body>
+  <form action="">
+  <input type="text" placeholder="Nombre" minlength="6" maxlength="20" required pattern="[A-Za-z]+">
+    <br>
+    <input type="text" placeholder="Apellido" minlength="6" maxlength="20" required pattern="[A-Za-z]+">
+    <br>
+    <input type="number" placeholder="Edad" min="18">
+    <br>
+    <input type="email" placeholder="Correo">
+    <br>
+    <button>Enviar</button>
+  </form>
+  
+</body>
+</html>
