@@ -88,3 +88,7 @@ button {
   align-items: center;
   gap: 15px; /*  es un espacio entre elementos del carrito al texto*/
 }
+
+button:hover{
+  cursor: pointer;
+}
