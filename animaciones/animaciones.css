@@ -1,0 +1,87 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(21, 21, 21);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+/* aninemos al p */
+
+p{
+/* partes de una animacion */
+/* el tiempo de una animacion puede ser en segundos o en milisegundos */
+
+animation-duration: 4s;
+/* nombre de la animacion*/
+animation-name: primera-animacion;
+margin: 10%;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+
+}
+/* tenemos que enlazar nuestar animacion con nuestro keyframe y esto se da por el nombre */
+@keyframes primera-animacion {
+  /* lo que esta dentro del keyframes se llama fotogramas */
+  /* inicio de animacion*/
+  from{
+    margin-left: 100%;
+    
+    background: green;
+  }
+  /* final de animacion*/
+  to{
+    color: red;
+    font-size: 100%;
+
+  }
+}
+h1 {
+  font-size: 89px;
+  color: #073dff;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-shadow: 0px 0px 0 rgb(-5,49,243),
+               -1px 1px 0 rgb(-17,37,231),
+               -2px 2px 0 rgb(-29,25,219),
+               -3px 3px 0 rgb(-41,13,207),
+               -4px 4px 0 rgb(-52,2,196),
+               -5px 5px 0 rgb(-64,-10,184),
+               -6px 6px 0 rgb(-76,-22,172),
+               -7px 7px 0 rgb(-88,-34,160),
+               -8px 8px 0 rgb(-100,-46,148),
+               -9px 9px 0 rgb(-112,-58,136),
+               -10px 10px  0 rgb(-124,-70,124),
+               -11px 11px 10px rgba(240,231,231,0.59),
+               -11px 11px 1px rgba(240,231,231,0.5),
+               0px 0px 10px rgba(240,231,231,.2);
+    animation-duration: 8s;
+    animation-name: screen-saver;
+    animation-iteration-count: infinite;
+    animation-duration: alternate;
+}
+
+@keyframes screen-saver {
+  from{
+    margin-left: 100%;
+  }
+  to{
+    margin-right: 100%;
+  }
+  10%{
+    margin-top: 500px;
+    background: white;
+  }
+  30%{
+    margin-bottom: 500px;
+    background: yellow;
+  }
+  50%{
+    margin-bottom: -500px;
+    background: white;
+  }
+  70%{
+    margin-bottom: 500px;
+    background: yellowgreen;
+  }
+}
